@@ -1,0 +1,85 @@
+/* Página */
+#carrinho {
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin: 0 auto;
+  max-width: 80%;
+}
+input.carrinho,
+button.carrinho {
+  font-weight: bold;
+  font-size: 1em;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  background: #d64107;
+  cursor: pointer;
+}
+
+/* Lista de compras */
+#c-produtos {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.p-item {
+  padding: 10px;
+  border: 1px solid #aaa;
+  text-align: center;
+}
+.p-nome {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.p-img {
+  max-height: 100px;
+}
+
+.p-valor {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+input.p-adicionar {
+  width: 80%;
+}
+
+/* carrinho de compras */
+#c-itens {
+  padding: 10px;
+  background: #f1f1f1;
+}
+.c-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.c-nome {
+  width: 100%;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+.c-apagar {
+  width: 20%;
+}
+.c-quantidade {
+  width: 75%;
+  font-size: 1em;
+}
+input.c-vazio,
+input.c-comprar {
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media screen AND (max-width: 768px) {
+  #carrinho {
+    grid-template-columns: 60% 40%;
+  }
+  #c-produtos {
+    grid-template-columns: auto;
+  }
+}
